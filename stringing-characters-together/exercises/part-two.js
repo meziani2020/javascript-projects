@@ -22,7 +22,7 @@ dna=dna.trim().toUpperCase();
 
 
 
-//console.log(dna.split("-")[4]);
+
 
 let dnaTwo = "TCG-TAC-GAC-TAC-CGT-CAG-ACT-TAA-CCA-GTC-CAT-AGA-GCT";
 
