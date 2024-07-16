@@ -18,3 +18,8 @@ function whoWon(player1,player2){
  
    return 'Player 1 wins!';
  }
+
+
+ module.exports = {
+  whoWon: whoWon
+};

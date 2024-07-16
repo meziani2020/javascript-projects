@@ -21,6 +21,5 @@ console.log(name_of_Space_shuttle+" will take "+ days_it_takes_to_Mars+" days to
 let distance_To_Moon_mile = distance_to_moone_klm * miles_per_km;
 let time_it_takes_to_moon_h = distance_To_Moon_mile / shuttle_speed_mph;
 let time_to_moon_days = time_it_takes_to_moon_h / 24;
-
 // Print the results of the trip to the moon below
 console.log(name_of_Space_shuttle + " will take " + time_to_moon_days + " days to reach the Moon.");
