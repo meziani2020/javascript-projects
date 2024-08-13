@@ -1,0 +1,14 @@
+{
+ "Question1Responces":[
+    { "correctSnippet":"b"},
+    {"whySnippetAIncorect":"key in JSON need to have double cots "},
+    {"whySnippetAIncorect":"value in JSON need to have double cots "}
+
+],
+"Question2Responces":[
+    { "correctSnippet":"a and c"},
+    {"whySnippetBIncorect":"No key for the main object "}
+
+]
+
+}

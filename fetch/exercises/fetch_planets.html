@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Fetch Planets</title>
+      <script>
+        let planets=[];
+        let index=0;
+        let interval;
+
+        function showplanet(){
+            //alert("showplanet"+planets.length);
+
+           let p=planets[index];
+           //alert(p.name);
+
+            let dis = document.getElementById("destination");
+            //alert(dis.innerHTML);
+            dis.innerHTML= "<h3> Planet "+p.name+"</h3>   <br/> <img src=\""+p.image+"\"  /> +"  ;                     
+            index=(index+1)%planets.length;
+
+
+        }
+
+        window.addEventListener("load", function() {
+          
+           document.getElementById("destination").addEventListener("click",function(){
+                //alert();
+                showplanet();
+
+           });
+            
+            fetch("https://handlers.education.launchcode.org/static/planets.json").then(function(response){
+                // TODO: do something after fetching and receiving a response
+                response.json().then(function(jsonO){
+                    //alert(jsonO);
+                    planets=jsonO;
+                    console.log(jsonO);
+                    showplanet();
+                    interval=setInterval(showplanet,2000);
+      
+                })
+             });
+             
+        });
+
+      </script>
+   </head>
+   <body>
+      <h1>Destination</h1>
+      <div id="destination">
+         <h3>Planet</h3>
+
+      </div>
+   </body>
+</html>
